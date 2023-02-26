@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header,
+.color-container {
+    box-shadow: -1px 10px 15px 0px rgba(0,0,0,0.77);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    padding: 1.5em;
+    max-width: 550px;
+    gap: 1em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#color-input {
+    margin: 0 auto;
+    border: none;
+    width: 51px;
+    height: 34px;
+    border: 0.5px solid #313131;
+}
+
+#scheme-input {
+    flex: 1;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 0.5em;
+}
+
+#get-color-btn {
+    margin: 0 auto;
+    max-width: 312px;
+    justify-self: center;
+    padding: 1em;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+select option {
+  font-size: 1.2rem;
+}
+
+.color-container {
+    max-width: 550px;
+    height: 85vh;
+    padding: 0 1.5em;
+    background-color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(50px, 1fr))
+}
+
+.color {
+    height: 70vh;
+    cursor: pointer;
+}
+
+.color-hex {
+    text-align: center;
+    color: #2B283A;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 12px;
+}
